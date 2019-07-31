@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Favorite car:
+<input type="button" id="myBtn" value="Volvo" onclick="func()">
+
+<p>Click the button below to change the text displayed on the input button above.</p>
+
+
+
+<button id="myBtn1" onclick="setInterval(myFunction, 1000)">Try it</button>
+
+<script>
+function func() {
+alert('You clicked some button!');
+}
+function myFunction() {
+var element = document.getElementById("myBtn");
+var element1 = document.getElementById("myBtn1");
+element1.style.background="red";
+if(element.value=="Volvo")
+{
+    element.value = "BMWW";
+element1.style.background = "#123456";
+element.style.background = "#ff0000";
+}
+else if(element.value=="BMWW")
+{
+    element.value = "Ford";
+element1.style.background = "#654321";
+element.style.background = "green";
+}
+else
+{
+element.value = "Volvo";
+element1.style.background = "#ABCDEF";
+element.style.background = "blue";
+}
+element.disabled = true;
+}
+</script>
+
+</body>
+</html>
