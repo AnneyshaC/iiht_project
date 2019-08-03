@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Admin Actions</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/admin action.css">
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+div #a {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 40px;
+  
+  height:45rem;
+  width:80rem;
+  margin: 100px auto;
+  text-align:center;
+  }
+  .button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+	<div id="admaction">
+	<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+    <ul class="nav navbar-nav">
+	  <li><a href="admtechnology.html">Technologies</a></li>
+      <li><a href="admusers.html">Users</a></li>
+      <li><a href="admmentors.html">Mentors</a></li>
+      <li class="active"><a href="admpayments.html">Payments</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+	</div>
+  </nav>
+  <div id="a">
+  <h4>Payments</h4>
+  <table>
+  <tr>
+	<th>Name of mentor</th>
+    <th>Technology</th>
+	<th>Fees(including commission)</th>
+	<th>Progress</th>
+    <th>Current payment</th>
+	<th>Action</th>
+  </tr>
+  <tr>
+    <td>ABC</td>
+    <td>java</td>
+	<td>4000</td>
+	<td>25%</td>
+	<td>1000</td>
+	<td><button type="button" class="btn btn-warning" onclick="#'">Edit commission %</button></td>
+  </tr>
+  <tr>
+    <td>XYZ</td>
+    <td>angular</td>
+	<td>8000</td>
+	<td>50%</td>
+	<td>4000</td>
+	<td><button type="button" class="btn btn-warning" onclick="#'">Edit commission %</button></td>
+  </tr>
+  <tr>
+    <td>PQR</td>
+    <td>python</td>
+	<td>5000</td>
+	<td>75%</td>
+	<td>4000</td>
+	<td><button type="button" class="btn btn-warning" onclick="#'">Edit commission %</button></td>
+  </tr>
+  
+</table>
+</div>
+  </div>
+</body>
+</html>
